@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    background-color: #0a0000;
+    background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.container ul {
+    list-style: none;
+}
+
+/* Navigation */
+.nav-main {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-brand {
+    width: 250px;
+}
+
+/* Navigation Left Side */
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 10px;
+}
+
+.nav-main ul li a {
+    transition: 0.3s ease;
+    padding: 6px;
+}
+
+.nav-main ul li a:hover {
+    border-bottom: 1px solid orange;
+    color: orange;
+}
+
+.nav-main ul.nav-menu {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.menu-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.5rem;
+    display: none;
+}
+
+/* Welcome Section */
+hr {
+    margin: 10px 0;
+}
+
+.showcase {
+    width: 100%;
+    background: url(images/home.jpg) no-repeat center center/cover;
+    height: 550px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.showcase div {
+    text-align: center;
+}
+
+.showcase div h2 {
+    font-size: xx-large;
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #0a0000;
+    width: fit-content;
+    padding: 15px 15px;
+    border-radius: 5px;
+}
+
+/* resources showcase */
+
+.resources-showcase {
+    width: 100%;
+    background: url(images/resources-section.jpg) no-repeat center center/cover;
+    height: 550px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.resources-showcase div {
+    text-align: center;
+}
+
+.resources-showcase div h2 {
+    font-size: xx-large;
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #0a0000;
+    width: fit-content;
+    padding: 15px 15px;
+    border-radius: 5px;
+}
+
+/* blog showcase */
+
+.blog-showcase {
+    width: 100%;
+    background: url(images/blog-showcase.jpg) no-repeat center center/cover;
+    height: 550px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.blog-showcase div {
+    text-align: center;
+}
+
+.blog-showcase div h2 {
+    font-size: xx-large;
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #0a0000;
+    width: fit-content;
+    padding: 15px 15px;
+    border-radius: 5px;
+}
+
+
+/* News Section - Cards */
+
+.news-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 10px 0;
+    color: rgb(255, 255, 255);
+}
+
+.news-cards img {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+}
+
+.news-cards div {
+    background-color: rgb(26, 5, 0);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.news-cards h3 {
+    font-size: 20px;
+}
+
+.news-cards p {
+    text-align: center;
+    padding: 10px 5px;
+}
+
+/* Social */
+.social {
+    margin: 50px;
+}
+
+.social p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 30px;
+}
+
+.links a i {
+    font-size: 3rem;
+}
+
+/* Footer links */
+.footer-links {
+    background-color: #2f3640;
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-container ul {
+    margin: 0 auto;
+}
+
+.footer-container ul li {
+    line-height: 2.5;
+}
+
+.footer {
+    background: #2f3640;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Media Queries */
+
+@media (max-width: 700px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-main ul.nav-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 100%;
+        transform: translateX(-400px);
+        padding: 30px;
+        opacity: 0.9;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-main ul.nav-menu.show {
+        transform: translateX(-20px);
+    }
+
+    .news-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-links .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .news-cards {
+        grid-template-columns: 1fr;
+    }
+}
